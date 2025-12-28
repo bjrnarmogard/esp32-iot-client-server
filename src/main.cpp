@@ -3,8 +3,8 @@
 #include <WiFi.h>
 
 // 🔧 Endre disse
-const char* ssid     = "Altibox257312";
-const char* password = "qrv9PErq";
+const char* ssid     = "DITT NETTVERK";
+const char* password = "DITT PASSORD";
 
 // 🔧 IP-adressen til PC-en som kjører server.py
 const char* server_ip = "192.168.10.114";
