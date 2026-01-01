@@ -6,8 +6,8 @@
 const int LED_PIN = 2;  // Innebygd LED på mange ESP32
 
 
-const char* ssid = "Altibox257312";
-const char* password = "qrv9PErq";
+const char* ssid = "nettverk";
+const char* password = "passord";
 
 void setup() {
     pinMode(LED_PIN, OUTPUT);
