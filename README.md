@@ -21,3 +21,31 @@ It verifies that the toolchain, drivers, serial port and upload process work cor
 
 ## How to build
 
+
+# ESP32 TCP Client / Python Server
+
+Dette prosjektet demonstrerer kommunikasjon mellom en ESP32 og en Python-basert TCP-server.
+
+## Funksjonalitet
+- ESP32 kobler til WiFi
+- Sender JSON-data til server
+- Server mottar og parser JSON
+- Server kan sende kommandoer tilbake
+- ESP32 reagerer (LED ON/OFF)
+
+## Teknologi
+- ESP32 (Arduino framework)
+- PlatformIO
+- Python 3
+- TCP sockets
+- JSON (ArduinoJson)
+
+## Eksempel på JSON
+```json
+{
+  "device": "ESP32",
+  "temp": 23.4,
+  "status": "ok"
+}
+
+
