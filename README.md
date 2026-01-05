@@ -48,4 +48,55 @@ Dette prosjektet demonstrerer kommunikasjon mellom en ESP32 og en Python-basert 
   "status": "ok"
 }
 
+# ESP32 IoT Client–Server (WiFi + JSON)
 
+Dette prosjektet demonstrerer kommunikasjon mellom en **ESP32 (WiFi-klient)** og en **Python TCP-server**, med meldinger sendt i **JSON-format**.
+
+Prosjektet er laget for å vise praktisk forståelse av:
+- Nettverk (TCP/IP)
+- Innebygde systemer (ESP32)
+- JSON-basert kommunikasjon
+- Klient–server-arkitektur
+
+---
+
+## 🔧 Teknologier brukt
+- **ESP32** (Arduino framework)
+- **C++ / Arduino**
+- **Python 3**
+- **WiFi (TCP socket)**
+- **JSON (ArduinoJson + Python json)**
+- **Git & GitHub**
+- **PlatformIO / VSCode**
+
+---
+
+## 🧠 Systemoversikt
+
+
+ESP32:
+- Kobler seg til WiFi
+- Sender status i JSON-format
+- Mottar kommandoer (f.eks. LED_ON / LED_OFF)
+
+Python-server:
+- Lytter på TCP-port
+- Parser JSON-meldinger
+- Sender svar tilbake til ESP32
+
+---
+
+## 📡 Eksempel på JSON-melding
+
+Fra ESP32 til server:
+```json
+{
+  "device": "ESP32",
+  "temp": 23.4,
+  "status": "ok"
+}
+
+{
+  "command": "LED_ON",
+  "interval": 2000
+}
