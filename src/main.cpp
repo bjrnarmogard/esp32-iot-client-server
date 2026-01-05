@@ -6,8 +6,8 @@
 const int LED_PIN = 2;  // Innebygd LED på mange ESP32
 
 
-const char* ssid = "nettverk";
-const char* password = "passord";
+const char* ssid = "Altibox257312";
+const char* password = "qrv9PErq";
 
 void setup() {
     pinMode(LED_PIN, OUTPUT);
@@ -30,7 +30,7 @@ void setup() {
     Serial.println(WiFi.localIP());
 }
 
-const char* server_ip = "192.168.10.114";  // PC / VM
+const char* server_ip = "192.168.10.130";  // PC / VM
 const uint16_t server_port = 5000;
 
 void loop() {
@@ -79,3 +79,5 @@ void loop() {
     client.stop();
     delay(8000);
 }
+
+
